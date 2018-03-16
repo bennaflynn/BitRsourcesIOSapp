@@ -19,6 +19,7 @@
 		0B71E70C205C647D007C336D /* glyphicons-459-money.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B71E701205C647D007C336D /* glyphicons-459-money.png */; };
 		0B71E70D205C647D007C336D /* glyphicons-503-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B71E702205C647D007C336D /* glyphicons-503-map.png */; };
 		0B71E70F205C6629007C336D /* NetWorthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E70E205C6629007C336D /* NetWorthController.swift */; };
+		0B71E712205C70C8007C336D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E710205C70C8007C336D /* Model.xcdatamodeld */; };
 		43FA683C93D9814075669C9E /* libPods-current-place-on-map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B6DAE685C4139E3E267D5D /* libPods-current-place-on-map.a */; };
 		E50C79BB1E4CFDE9008ECCEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C79BA1E4CFDE9008ECCEB /* AppDelegate.swift */; };
 		E50C79BD1E4CFDE9008ECCEB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C79BC1E4CFDE9008ECCEB /* MapViewController.swift */; };
@@ -42,6 +43,7 @@
 		0B71E701205C647D007C336D /* glyphicons-459-money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-459-money.png"; path = "../../../glyphicons_free/glyphicons/png/glyphicons-459-money.png"; sourceTree = "<group>"; };
 		0B71E702205C647D007C336D /* glyphicons-503-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-503-map.png"; path = "../../../glyphicons_free/glyphicons/png/glyphicons-503-map.png"; sourceTree = "<group>"; };
 		0B71E70E205C6629007C336D /* NetWorthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthController.swift; sourceTree = "<group>"; };
+		0B71E711205C70C8007C336D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		9F38BF454393A3D5F89DBC86 /* Pods-current-place-on-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-current-place-on-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-current-place-on-map/Pods-current-place-on-map.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B6DAE685C4139E3E267D5D /* libPods-current-place-on-map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-current-place-on-map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50AE729DE90351174E95425 /* Pods-current-place-on-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-current-place-on-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-current-place-on-map/Pods-current-place-on-map.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				E50C79C31E4CFDE9008ECCEB /* LaunchScreen.storyboard */,
 				E50C79C61E4CFDE9008ECCEB /* Info.plist */,
 				0B71E6F6205C5DD5007C336D /* Vancouver.gpx */,
+				0B71E710205C70C8007C336D /* Model.xcdatamodeld */,
 			);
 			path = "current-place-on-map";
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				E50C79CE1E4CFE5D008ECCEB /* PlacesViewController.swift in Sources */,
 				E50C79BD1E4CFDE9008ECCEB /* MapViewController.swift in Sources */,
+				0B71E712205C70C8007C336D /* Model.xcdatamodeld in Sources */,
 				0B71E70F205C6629007C336D /* NetWorthController.swift in Sources */,
 				E50C79BB1E4CFDE9008ECCEB /* AppDelegate.swift in Sources */,
 			);
@@ -460,6 +464,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B71E710205C70C8007C336D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B71E711205C70C8007C336D /* Model.xcdatamodel */,
+			);
+			currentVersion = 0B71E711205C70C8007C336D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E50C79AF1E4CFDE9008ECCEB /* Project object */;
 }
