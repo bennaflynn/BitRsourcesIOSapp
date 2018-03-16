@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dQp-km-aKy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="ivy-wl-UHP">
+            <objects>
+                <viewController id="kS9-Xt-6Vq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zi9-dE-xfa"/>
+                        <viewControllerLayoutGuide type="bottom" id="oX0-h1-BpL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Zn-Vn-UiN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-Ux-nl0">
+                                <rect key="frame" x="140.5" y="0.0" width="93" height="58.5"/>
+                                <color key="backgroundColor" red="1" green="0.76361598085375526" blue="0.049738140635227857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vib-0n-UBF">
+                                <rect key="frame" x="16" y="59" width="343" height="557"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="oSF-hO-BNR" kind="embed" id="giP-vP-lwp"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cmQ-Ux-nl0" firstAttribute="centerX" secondItem="7Zn-Vn-UiN" secondAttribute="centerX" id="Y8L-Lq-hfI"/>
+                            <constraint firstItem="cmQ-Ux-nl0" firstAttribute="top" secondItem="7Zn-Vn-UiN" secondAttribute="top" id="ftY-aS-kcH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="glyphicons-503-map.png" id="e3a-Er-2TG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cS-6k-Tjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="-68.815592203898049"/>
+        </scene>
+        <!--Net Worth-->
+        <scene sceneID="bDg-n9-UD0">
+            <objects>
+                <tableViewController id="ly9-ZY-rSe" customClass="NetWorthController" customModule="current_place_on_map" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3UM-pW-egH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NBe-Sa-GVz">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.76361598090000005" blue="0.049738140639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="Add Cryptocurrency">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <segue destination="FE5-YZ-tDU" kind="show" id="Iii-Wv-KCP"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f1w-ye-clJ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1w-ye-clJ" id="Vte-z7-b6I">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ly9-ZY-rSe" id="zte-g1-0t5"/>
+                            <outlet property="delegate" destination="ly9-ZY-rSe" id="dG4-go-lKz"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Net Worth" image="glyphicons-548-bitcoin.png" id="HQv-0g-n3h"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh7-je-ZDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="601"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LYx-U0-0RA">
+            <objects>
+                <viewController id="FE5-YZ-tDU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wzl-7S-gfl"/>
+                        <viewControllerLayoutGuide type="bottom" id="3so-E6-2UM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDh-ME-tl0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-yo-MSS">
+                                <rect key="frame" x="114" y="49" width="148" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kM8-LK-kDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="600.44977511244383"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="fcV-yf-5DM">
+            <objects>
+                <viewController id="oSF-hO-BNR" customClass="MapViewController" customModule="current_place_on_map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qej-O8-cu0">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="557"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNI-YI-6Io" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.19999999999999" y="-69.265367316341838"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1Vr-6t-iST">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dQp-km-aKy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L73-4k-oaE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kS9-Xt-6Vq" kind="relationship" relationship="viewControllers" id="91e-xO-zM4"/>
+                        <segue destination="ly9-ZY-rSe" kind="relationship" relationship="viewControllers" id="PLy-Rh-zDz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZm-Bf-3kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1467.2" y="-69.265367316341838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="glyphicons-503-map.png" width="23" height="23"/>
+        <image name="glyphicons-548-bitcoin.png" width="16" height="24"/>
+    </resources>
+</document>
