@@ -20,6 +20,7 @@
 		0B71E70D205C647D007C336D /* glyphicons-503-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B71E702205C647D007C336D /* glyphicons-503-map.png */; };
 		0B71E70F205C6629007C336D /* NetWorthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E70E205C6629007C336D /* NetWorthController.swift */; };
 		0B71E712205C70C8007C336D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E710205C70C8007C336D /* Model.xcdatamodeld */; };
+		0B71E714205C764D007C336D /* AddCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E713205C764D007C336D /* AddCryptoViewController.swift */; };
 		43FA683C93D9814075669C9E /* libPods-current-place-on-map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B6DAE685C4139E3E267D5D /* libPods-current-place-on-map.a */; };
 		E50C79BB1E4CFDE9008ECCEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C79BA1E4CFDE9008ECCEB /* AppDelegate.swift */; };
 		E50C79BD1E4CFDE9008ECCEB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C79BC1E4CFDE9008ECCEB /* MapViewController.swift */; };
@@ -44,6 +45,7 @@
 		0B71E702205C647D007C336D /* glyphicons-503-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-503-map.png"; path = "../../../glyphicons_free/glyphicons/png/glyphicons-503-map.png"; sourceTree = "<group>"; };
 		0B71E70E205C6629007C336D /* NetWorthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthController.swift; sourceTree = "<group>"; };
 		0B71E711205C70C8007C336D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		0B71E713205C764D007C336D /* AddCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoViewController.swift; sourceTree = "<group>"; };
 		9F38BF454393A3D5F89DBC86 /* Pods-current-place-on-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-current-place-on-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-current-place-on-map/Pods-current-place-on-map.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B6DAE685C4139E3E267D5D /* libPods-current-place-on-map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-current-place-on-map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50AE729DE90351174E95425 /* Pods-current-place-on-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-current-place-on-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-current-place-on-map/Pods-current-place-on-map.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				E50C79BC1E4CFDE9008ECCEB /* MapViewController.swift */,
 				E50C79CD1E4CFE5D008ECCEB /* PlacesViewController.swift */,
 				0B71E70E205C6629007C336D /* NetWorthController.swift */,
+				0B71E713205C764D007C336D /* AddCryptoViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				0B71E712205C70C8007C336D /* Model.xcdatamodeld in Sources */,
 				0B71E70F205C6629007C336D /* NetWorthController.swift in Sources */,
 				E50C79BB1E4CFDE9008ECCEB /* AppDelegate.swift in Sources */,
+				0B71E714205C764D007C336D /* AddCryptoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

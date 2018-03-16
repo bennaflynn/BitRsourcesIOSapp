@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="-823" y="601"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Crypto View Controller-->
         <scene sceneID="LYx-U0-0RA">
             <objects>
-                <viewController id="FE5-YZ-tDU" sceneMemberID="viewController">
+                <viewController id="FE5-YZ-tDU" customClass="AddCryptoViewController" customModule="current_place_on_map" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wzl-7S-gfl"/>
                         <viewControllerLayoutGuide type="bottom" id="3so-E6-2UM"/>
@@ -101,16 +101,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-yo-MSS">
-                                <rect key="frame" x="114" y="49" width="148" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iSo-vd-lzh">
+                                <rect key="frame" x="195" y="262" width="164" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="backgroundColor" red="0.48147677537470918" green="0.72336632013320923" blue="0.65349927557428389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYq-2u-LjQ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.76361598090000005" blue="0.049738140639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-J6-QO6">
+                                <rect key="frame" x="46" y="258" width="124" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMR-Wj-eq0">
+                                <rect key="frame" x="54" y="366" width="109" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ly9-ZY-rSe" kind="show" id="2Rd-Gg-y87"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHd-eY-6Lm">
+                                <rect key="frame" x="211" y="366" width="116" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.93498448030000003" blue="0.067971332359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="picker" destination="bYq-2u-LjQ" id="zHW-eF-bcX"/>
+                        <outlet property="pickerTextField" destination="iSo-vd-lzh" id="35a-ia-NXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kM8-LK-kDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,4 +192,7 @@
         <image name="glyphicons-503-map.png" width="23" height="23"/>
         <image name="glyphicons-548-bitcoin.png" width="16" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Rd-Gg-y87"/>
+    </inferredMetricsTieBreakers>
 </document>
