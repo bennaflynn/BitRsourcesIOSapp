@@ -1,0 +1,10 @@
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/bin/Debug/netcoreapp2.0/LocationApi.deps.json
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/bin/Debug/netcoreapp2.0/LocationApi.runtimeconfig.json
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/bin/Debug/netcoreapp2.0/LocationApi.runtimeconfig.dev.json
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/bin/Debug/netcoreapp2.0/LocationApi.dll
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/bin/Debug/netcoreapp2.0/LocationApi.pdb
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/obj/Debug/netcoreapp2.0/LocationApi.csproj.CoreCompileInputs.cache
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/obj/Debug/netcoreapp2.0/LocationApi.AssemblyInfoInputs.cache
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/obj/Debug/netcoreapp2.0/LocationApi.AssemblyInfo.cs
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/obj/Debug/netcoreapp2.0/LocationApi.dll
+/Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/LocationApi/obj/Debug/netcoreapp2.0/LocationApi.pdb

@@ -10,12 +10,357 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "542934442.60878"
+            timestampString = "544651577.765252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "AddCrypto(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/AddCryptoViewController.swift"
+            timestampString = "544651577.765357"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AddCryptoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.AddCryptoViewController.__deallocating_deinit"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/AddCryptoViewController.swift"
+                  timestampString = "543262671.5798219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.AddCryptoViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; current_place_on_map.AddCryptoViewController"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/AddCryptoViewController.swift"
+                  timestampString = "543262671.582674"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.AddCryptoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; current_place_on_map.AddCryptoViewController"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/AddCryptoViewController.swift"
+                  timestampString = "543262671.585379"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.AddCryptoViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;current_place_on_map.AddCryptoViewController&gt;"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/AddCryptoViewController.swift"
+                  timestampString = "543262671.587661"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.AddCryptoViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;current_place_on_map.AddCryptoViewController&gt;"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/AddCryptoViewController.swift"
+                  timestampString = "543262671.590046"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/AddCryptoViewController.swift"
+            timestampString = "544651577.765403"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "AddCryptoViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/AddCryptoViewController.swift"
+            timestampString = "544651577.765443"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "AddCryptoViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/MapViewController.swift"
+            timestampString = "544654020.266621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "get_data_from_url(_url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/MapViewController.swift"
+            timestampString = "544654020.267009"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "get_data_from_url(_url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/MapViewController.swift"
+            timestampString = "544654020.26724"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "get_data_from_url(_url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/MapViewController.swift"
+            timestampString = "544654020.2674561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "MapViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.locationManager.getter : __ObjC.CLLocationManager"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982296.364701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.locationManager.setter : __ObjC.CLLocationManager"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982296.368861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; current_place_on_map.MapViewController"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982296.37173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;current_place_on_map.MapViewController&gt;"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982296.37353"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "134">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/MapViewController.swift"
+            timestampString = "544654020.267674"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "MapViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.currentLocation.getter : Swift.Optional&lt;__ObjC.CLLocation&gt;"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982328.297731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.currentLocation.setter : Swift.Optional&lt;__ObjC.CLLocation&gt;"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982328.300379"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; current_place_on_map.MapViewController"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982328.302044"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "325">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "current_place_on_map.MapViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;current_place_on_map.MapViewController&gt;"
+                  moduleName = "current-place-on-map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bfynnigan/Documents/SSD/IOS/Projects/BitResourcesProj/current-place-on-map/MapViewController.swift"
+                  timestampString = "543982328.3036031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "270">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/MapViewController.swift"
+            timestampString = "544654020.267886"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "get_data_from_url(_url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -16,9 +16,24 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import SwiftyJSON
+
+class Location {
+    var lat: Double
+    var long: Double
+    
+    init(lat:Double,long:Double) {
+        self.lat = lat
+        self.long = long
+    }
+}
 
 class MapViewController: UIViewController {
-
+    
+    var locations :[Location]=[]
+  
+    let group = DispatchGroup()
+    
   var locationManager = CLLocationManager()
   var currentLocation: CLLocation?
   var mapView: GMSMapView!
@@ -77,8 +92,22 @@ class MapViewController: UIViewController {
     mapView.isHidden = true
 
     listLikelyPlaces()
+    
+    
+    
+    group.enter()
+    DispatchQueue.main.async {
+        self.get_data_from_url(_url: "http://localhost:5000/locationapi/getallatms")
+        
+    }
+    group.notify(queue: .main) {
+        self.placeMarkers()
+    }
+    
+    
   }
-
+    
+    
   // Populate the array with the list of likely places.
   func listLikelyPlaces() {
     // Clean up from previous sessions.
@@ -155,4 +184,58 @@ extension MapViewController: CLLocationManagerDelegate {
     locationManager.stopUpdatingLocation()
     print("Error: \(error)")
   }
+    
+    //get the location data from the API
+    func get_data_from_url(_url:String) {
+        let myUrl   = NSURL(string: _url);
+        let request = NSMutableURLRequest(url:myUrl! as URL);
+        request.httpMethod = "GET"
+        // request.he
+        // Excute HTTP Request
+        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+            data, response, error in
+            
+            // Check for error
+            if error != nil {
+                print("error=\(String(describing: error))")
+                return
+            }
+            
+            // Convert data to json.
+            let json = JSON(data!)
+            
+            for item in json.array! {
+                let latstring = String(describing: item["lat"])
+                let longstring = String(describing: item["long"])
+                
+                let latf = Double(latstring)
+                let longf = Double(longstring)
+                
+                //var newLoc = Location(lat:latf!, long:longf!)
+                //print(newLoc.lat)
+               
+                self.locations.append(Location(lat:latf!, long:longf!))
+            }
+            print("The next thing is location data")
+            print(self.locations[0].lat)
+            
+            self.group.leave()
+            // Reload TableView once data is back.
+            DispatchQueue.main.async {
+                //self.tableView.reloadData()
+            }
+        }
+        task.resume()
+    }
+    
+    //place the markers on the map!!
+    func placeMarkers() {
+        for place in locations {
+            let position = CLLocationCoordinate2D(latitude: place.lat, longitude: place.long)
+            let marker = GMSMarker(position: position)
+            marker.title = "ATM"
+            marker.map = mapView
+        }
+    }
+
 }

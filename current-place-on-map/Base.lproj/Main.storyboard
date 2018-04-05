@@ -107,7 +107,7 @@
                                 <color key="backgroundColor" red="0.48147677537470918" green="0.72336632013320923" blue="0.65349927557428389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bYq-2u-LjQ">
                                 <rect key="frame" x="0.0" y="88" width="375" height="162"/>
@@ -142,13 +142,16 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddCrypto:" destination="FE5-YZ-tDU" eventType="touchUpInside" id="HD5-Lp-LOy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93498448030000003" blue="0.067971332359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="AmountEdit" destination="iSo-vd-lzh" id="k1O-xF-NX1"/>
                         <outlet property="picker" destination="bYq-2u-LjQ" id="zHW-eF-bcX"/>
-                        <outlet property="pickerTextField" destination="iSo-vd-lzh" id="35a-ia-NXF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kM8-LK-kDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,6 +162,10 @@
         <scene sceneID="fcV-yf-5DM">
             <objects>
                 <viewController id="oSF-hO-BNR" customClass="MapViewController" customModule="current_place_on_map" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0lM-jl-OYa"/>
+                        <viewControllerLayoutGuide type="bottom" id="yf0-HK-bil"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qej-O8-cu0">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="557"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +182,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dQp-km-aKy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L73-4k-oaE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
