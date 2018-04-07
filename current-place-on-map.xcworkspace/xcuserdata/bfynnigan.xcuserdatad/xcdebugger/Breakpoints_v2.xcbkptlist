@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544651577.765252"
+            timestampString = "544836742.3928339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "AddCrypto(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544651577.765357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "AddCryptoViewController"
             landmarkType = "3">
             <Locations>
@@ -119,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544651577.765403"
+            timestampString = "544836742.393236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "AddCryptoViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -131,15 +115,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544651577.765443"
+            timestampString = "544836742.39346"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "AddCryptoViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -151,7 +135,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/MapViewController.swift"
-            timestampString = "544654020.266621"
+            timestampString = "544836742.39367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "207"
@@ -167,7 +151,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/MapViewController.swift"
-            timestampString = "544654020.267009"
+            timestampString = "544836742.393718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "220"
@@ -183,7 +167,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/MapViewController.swift"
-            timestampString = "544654020.26724"
+            timestampString = "544836742.393761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "217"
@@ -199,7 +183,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/MapViewController.swift"
-            timestampString = "544654020.2674561"
+            timestampString = "544836742.393802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -277,7 +261,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/MapViewController.swift"
-            timestampString = "544654020.267674"
+            timestampString = "544836742.393841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -355,12 +339,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/MapViewController.swift"
-            timestampString = "544654020.267886"
+            timestampString = "544836742.393882"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "219"
             endingLineNumber = "219"
             landmarkName = "get_data_from_url(_url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/AddCryptoViewController.swift"
+            timestampString = "544836742.393923"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "AddCrypto(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/Repos/CryptoRepo.swift"
+            timestampString = "544836742.394138"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "All()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

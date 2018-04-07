@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3F95F32076C69B00C9D136 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3F95DF2076C65F00C9D136 /* SQLite.framework */; };
+		0B3F95F42076C69B00C9D136 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3F95DF2076C65F00C9D136 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0B3F95FC2076C71E00C9D136 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F95FB2076C71E00C9D136 /* Crypto.swift */; };
+		0B3F96002076C8EE00C9D136 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F95FF2076C8EE00C9D136 /* DBService.swift */; };
+		0B3F96042076C9A500C9D136 /* CryptoRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F96032076C9A500C9D136 /* CryptoRepo.swift */; };
+		0B3F96062076E99B00C9D136 /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F96052076E99B00C9D136 /* CryptoCell.swift */; };
 		0B71E703205C647D007C336D /* glyphicons-548-bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B71E6F8205C647C007C336D /* glyphicons-548-bitcoin.png */; };
 		0B71E704205C647D007C336D /* glyphicons-41-stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B71E6F9205C647C007C336D /* glyphicons-41-stats.png */; };
 		0B71E705205C647D007C336D /* glyphicons-38-coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B71E6FA205C647C007C336D /* glyphicons-38-coins.png */; };
@@ -33,6 +39,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0B3F95DE2076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		0B3F95E02076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		0B3F95E22076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		0B3F95E42076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		0B3F95E62076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		0B3F95E82076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		0B3F95EA2076C65F00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		0B3F95F52076C69B00C9D136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 		0BB92B8220659B1600E5A665 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0BB92B7720659B1500E5A665 /* SwiftyJSON.xcodeproj */;
@@ -98,6 +160,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0B3F95F42076C69B00C9D136 /* SQLite.framework in Embed Frameworks */,
 				0BB92B9120659B2500E5A665 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -106,6 +169,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = Sqlite/SQLite.xcodeproj; sourceTree = "<group>"; };
+		0B3F95FB2076C71E00C9D136 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		0B3F95FF2076C8EE00C9D136 /* DBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBService.swift; sourceTree = "<group>"; };
+		0B3F96032076C9A500C9D136 /* CryptoRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRepo.swift; sourceTree = "<group>"; };
+		0B3F96052076E99B00C9D136 /* CryptoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
 		0B71E6F6205C5DD5007C336D /* Vancouver.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Vancouver.gpx; path = Assets.xcassets/Vancouver.gpx; sourceTree = "<group>"; };
 		0B71E6F8205C647C007C336D /* glyphicons-548-bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-548-bitcoin.png"; path = "../../../glyphicons_free/glyphicons/png/glyphicons-548-bitcoin.png"; sourceTree = "<group>"; };
 		0B71E6F9205C647C007C336D /* glyphicons-41-stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "glyphicons-41-stats.png"; path = "../../../glyphicons_free/glyphicons/png/glyphicons-41-stats.png"; sourceTree = "<group>"; };
@@ -142,12 +210,51 @@
 			files = (
 				0BB92B9020659B2500E5A665 /* SwiftyJSON.framework in Frameworks */,
 				43FA683C93D9814075669C9E /* libPods-current-place-on-map.a in Frameworks */,
+				0B3F95F32076C69B00C9D136 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3F95D52076C65F00C9D136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F95DF2076C65F00C9D136 /* SQLite.framework */,
+				0B3F95E12076C65F00C9D136 /* SQLiteTests iOS.xctest */,
+				0B3F95E32076C65F00C9D136 /* SQLite.framework */,
+				0B3F95E52076C65F00C9D136 /* SQLiteTests Mac.xctest */,
+				0B3F95E72076C65F00C9D136 /* SQLite.framework */,
+				0B3F95E92076C65F00C9D136 /* SQLiteTests tvOS.xctest */,
+				0B3F95EB2076C65F00C9D136 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B3F95FA2076C71100C9D136 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F95FB2076C71E00C9D136 /* Crypto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B3F95FE2076C8DA00C9D136 /* DbService */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F95FF2076C8EE00C9D136 /* DBService.swift */,
+			);
+			path = DbService;
+			sourceTree = "<group>";
+		};
+		0B3F96022076C99400C9D136 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F96032076C9A500C9D136 /* CryptoRepo.swift */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
 		0B71E6F7205C6367007C336D /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +307,7 @@
 		E50C79AE1E4CFDE9008ECCEB = {
 			isa = PBXGroup;
 			children = (
+				0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */,
 				E50C79B91E4CFDE9008ECCEB /* current-place-on-map */,
 				E50C79B81E4CFDE9008ECCEB /* Products */,
 				6D254835BFE480B438357D8C /* Pods */,
@@ -218,6 +326,9 @@
 		E50C79B91E4CFDE9008ECCEB /* current-place-on-map */ = {
 			isa = PBXGroup;
 			children = (
+				0B3F96022076C99400C9D136 /* Repos */,
+				0B3F95FE2076C8DA00C9D136 /* DbService */,
+				0B3F95FA2076C71100C9D136 /* Models */,
 				0BB92B7720659B1500E5A665 /* SwiftyJSON.xcodeproj */,
 				0B71E6F7205C6367007C336D /* Icons */,
 				E50C79CC1E4CFE32008ECCEB /* View Controllers */,
@@ -228,6 +339,7 @@
 				E50C79C61E4CFDE9008ECCEB /* Info.plist */,
 				0B71E6F6205C5DD5007C336D /* Vancouver.gpx */,
 				0B71E710205C70C8007C336D /* Model.xcdatamodeld */,
+				0B3F96052076E99B00C9D136 /* CryptoCell.swift */,
 			);
 			path = "current-place-on-map";
 			sourceTree = "<group>";
@@ -262,6 +374,7 @@
 			);
 			dependencies = (
 				0BB92B9320659B2500E5A665 /* PBXTargetDependency */,
+				0B3F95F62076C69B00C9D136 /* PBXTargetDependency */,
 			);
 			name = "current-place-on-map";
 			productName = "current-place-on-map";
@@ -298,6 +411,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 0B3F95D52076C65F00C9D136 /* Products */;
+					ProjectRef = 0B3F95D42076C65F00C9D136 /* SQLite.xcodeproj */;
+				},
+				{
 					ProductGroup = 0BB92B7820659B1500E5A665 /* Products */;
 					ProjectRef = 0BB92B7720659B1500E5A665 /* SwiftyJSON.xcodeproj */;
 				},
@@ -310,6 +427,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		0B3F95DF2076C65F00C9D136 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 0B3F95DE2076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B3F95E12076C65F00C9D136 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 0B3F95E02076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B3F95E32076C65F00C9D136 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 0B3F95E22076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B3F95E52076C65F00C9D136 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 0B3F95E42076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B3F95E72076C65F00C9D136 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 0B3F95E62076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B3F95E92076C65F00C9D136 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 0B3F95E82076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0B3F95EB2076C65F00C9D136 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 0B3F95EA2076C65F00C9D136 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		0BB92B8320659B1600E5A665 /* SwiftyJSON.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -447,10 +613,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E50C79CE1E4CFE5D008ECCEB /* PlacesViewController.swift in Sources */,
+				0B3F96002076C8EE00C9D136 /* DBService.swift in Sources */,
+				0B3F96062076E99B00C9D136 /* CryptoCell.swift in Sources */,
+				0B3F96042076C9A500C9D136 /* CryptoRepo.swift in Sources */,
 				E50C79BD1E4CFDE9008ECCEB /* MapViewController.swift in Sources */,
 				0B71E712205C70C8007C336D /* Model.xcdatamodeld in Sources */,
 				0B71E70F205C6629007C336D /* NetWorthController.swift in Sources */,
 				E50C79BB1E4CFDE9008ECCEB /* AppDelegate.swift in Sources */,
+				0B3F95FC2076C71E00C9D136 /* Crypto.swift in Sources */,
 				0B71E714205C764D007C336D /* AddCryptoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +628,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0B3F95F62076C69B00C9D136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 0B3F95F52076C69B00C9D136 /* PBXContainerItemProxy */;
+		};
 		0BB92B9320659B2500E5A665 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SwiftyJSON iOS";

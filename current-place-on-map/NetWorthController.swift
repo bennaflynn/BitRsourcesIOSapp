@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import SQLite
 
 class NetWorthController: UITableViewController {
+    var cryptos = [Cryptos] ()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let repo = CryptoRepo()
+        cryptos = repo.All()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +35,28 @@ class NetWorthController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return cryptos.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as? CryptoCell else {
+            fatalError("The dequeued cell is not an instance of CryptoCell.")
+        }
+        
 
-        // Configure the cell...
+        cell.symbolLabel.text = cryptos[indexPath.row].symbol
+        
+        cell.qtyLabel.text = String(cryptos[indexPath.row].qty)
 
         return cell
     }
-    */
+  
 
     /*
     // Override to support conditional editing of the table view.

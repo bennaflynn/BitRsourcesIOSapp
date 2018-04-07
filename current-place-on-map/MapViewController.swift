@@ -97,7 +97,7 @@ class MapViewController: UIViewController {
     
     group.enter()
     DispatchQueue.main.async {
-        self.get_data_from_url(_url: "http://localhost:5000/locationapi/getallatms")
+        self.get_data_from_url(_url: "https://bitresources.herokuapp.com/locationapi/getallatms")
         
     }
     group.notify(queue: .main) {

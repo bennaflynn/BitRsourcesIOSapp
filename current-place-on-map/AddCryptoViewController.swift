@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SQLite
 
 class AddCryptoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -34,23 +35,33 @@ class AddCryptoViewController: UIViewController, UIPickerViewDataSource, UIPicke
     let names = ["Bitcoin", "Ethereum","Ripple", "Bitcoin Cash","Litecoin","Cardano","NEO","Stellar Lumens","EOS" ]
     
     @IBAction func AddCrypto(_ sender: Any) {
-        let context = self.getContext()
-        let CryptoEntity = NSEntityDescription.entity(forEntityName: "Crypto", in: context)
-        let insert = NSManagedObject(entity: CryptoEntity!, insertInto: context)
+//        let context = self.getContext()
+//        let CryptoEntity = NSEntityDescription.entity(forEntityName: "Crypto", in: context)
+//        let insert = NSManagedObject(entity: CryptoEntity!, insertInto: context)
+        
+        let repo = CryptoRepo()
+        
         if(AmountEdit.text != "") {
             var amount : Float = NSString(string: AmountEdit.text!).floatValue
             if(!amount.isNaN) {
                 var symbol = symbols[picker.selectedRow(inComponent: 0)]
-                var name = names[picker.selectedRow(inComponent: 0)]
-                insert.setValue(name, forKey: "name")
-                insert.setValue(amount, forKey: "qty")
-                insert.setValue(symbol, forKey: "symbol")
+                var name = names[symbols.index(of: symbols[picker.selectedRow(inComponent: 0)])!]
+
+                var cryptos = [Cryptos] ()
+                cryptos = repo.All()
                 
-                do {
-                    try context.save()
-                } catch {
-                    
+                
+                
+                for crypto in cryptos {
+                    if(crypto.symbol == symbol) {
+                        //crypto exists in the db so just update the row
+                        var newQty = crypto.qty + amount;
+                        repo.Update(_id: crypto.id!, _name: crypto.name, _qty: newQty, _symbol: crypto.symbol)
+                        return
+                    }
                 }
+                //if the cryptos were looped through and the specific crypto hadn't been added then add it here
+                repo.Insert(_name: name, _qty: amount, _symbol: symbol)
             }
         }
     }
