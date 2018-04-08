@@ -55,7 +55,15 @@ class AddCryptoViewController: UIViewController, UIPickerViewDataSource, UIPicke
                 for crypto in cryptos {
                     if(crypto.symbol == symbol) {
                         //crypto exists in the db so just update the row
+                        
                         var newQty = crypto.qty + amount;
+                        
+                        //if the result is less than zero then delete the entry entirely
+                        if(newQty < 0) {
+                            repo.Delete(_id: crypto.id!)
+                            return
+                        }
+                        
                         repo.Update(_id: crypto.id!, _name: crypto.name, _qty: newQty, _symbol: crypto.symbol)
                         return
                     }

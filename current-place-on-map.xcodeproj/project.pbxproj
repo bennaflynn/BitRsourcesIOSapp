@@ -27,6 +27,7 @@
 		0B71E70F205C6629007C336D /* NetWorthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E70E205C6629007C336D /* NetWorthController.swift */; };
 		0B71E712205C70C8007C336D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E710205C70C8007C336D /* Model.xcdatamodeld */; };
 		0B71E714205C764D007C336D /* AddCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71E713205C764D007C336D /* AddCryptoViewController.swift */; };
+		0B79BA2F207A966B00DEE2FE /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B79BA2E207A966B00DEE2FE /* PriceViewController.swift */; };
 		0BB92B9020659B2500E5A665 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB92B8320659B1600E5A665 /* SwiftyJSON.framework */; };
 		0BB92B9120659B2500E5A665 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB92B8320659B1600E5A665 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43FA683C93D9814075669C9E /* libPods-current-place-on-map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B6DAE685C4139E3E267D5D /* libPods-current-place-on-map.a */; };
@@ -189,6 +190,7 @@
 		0B71E70E205C6629007C336D /* NetWorthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthController.swift; sourceTree = "<group>"; };
 		0B71E711205C70C8007C336D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0B71E713205C764D007C336D /* AddCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoViewController.swift; sourceTree = "<group>"; };
+		0B79BA2E207A966B00DEE2FE /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		0BB92B7720659B1500E5A665 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = Swifty/SwiftyJSON.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9F38BF454393A3D5F89DBC86 /* Pods-current-place-on-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-current-place-on-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-current-place-on-map/Pods-current-place-on-map.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B6DAE685C4139E3E267D5D /* libPods-current-place-on-map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-current-place-on-map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,6 +353,7 @@
 				E50C79CD1E4CFE5D008ECCEB /* PlacesViewController.swift */,
 				0B71E70E205C6629007C336D /* NetWorthController.swift */,
 				0B71E713205C764D007C336D /* AddCryptoViewController.swift */,
+				0B79BA2E207A966B00DEE2FE /* PriceViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B79BA2F207A966B00DEE2FE /* PriceViewController.swift in Sources */,
 				E50C79CE1E4CFE5D008ECCEB /* PlacesViewController.swift in Sources */,
 				0B3F96002076C8EE00C9D136 /* DBService.swift in Sources */,
 				0B3F96062076E99B00C9D136 /* CryptoCell.swift in Sources */,

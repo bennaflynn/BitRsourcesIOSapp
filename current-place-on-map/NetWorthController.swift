@@ -56,7 +56,20 @@ class NetWorthController: UITableViewController {
 
         return cell
     }
-  
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "showPrice") {
+            let vc = segue.destination as! PriceViewController
+            let indexPath = self.tableView.indexPathForSelectedRow
+            let rowNum = indexPath!.row
+            
+            vc.symbol = cryptos[rowNum].symbol
+            
+            vc.name = cryptos[rowNum].name
+            
+            vc.qty = String(cryptos[rowNum].qty)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

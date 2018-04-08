@@ -92,6 +92,26 @@ class CryptoRepo {
         sqlite3_finalize(stmt)
     }
     
+    func Delete(_id:Int64) {
+        let queryString = "DELETE FROM Crypto WHERE id = '\(_id)'"
+        
+        var stmt: OpaquePointer?
+        
+        if(sqlite3_prepare(_db, queryString, -1, &stmt, nil) != SQLITE_OK) {
+            let errmsg = String(cString: sqlite3_errmsg(_db)!)
+            print("error preparing DELETE: \(errmsg)")
+            return
+        }
+        if sqlite3_step(stmt) != SQLITE_DONE {
+            let errmsg = String(cString: sqlite3_errmsg(_db)!)
+            print("failure DELETING: \(errmsg)")
+            return
+        }
+        
+        print(queryString)
+        sqlite3_finalize(stmt)
+    }
+    
     // Get arry of contacts.
     func All()->[Cryptos] {
         
