@@ -64,6 +64,9 @@ class AddCryptoViewController: UIViewController, UIPickerViewDataSource, UIPicke
                 repo.Insert(_name: name, _qty: amount, _symbol: symbol)
             }
         }
+        
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "tableView") as! NetWorthController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

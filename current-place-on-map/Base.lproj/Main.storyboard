@@ -51,7 +51,7 @@
         <!--Net Worth-->
         <scene sceneID="bDg-n9-UD0">
             <objects>
-                <tableViewController id="ly9-ZY-rSe" customClass="NetWorthController" customModule="current_place_on_map" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tableView" id="ly9-ZY-rSe" customClass="NetWorthController" customModule="current_place_on_map" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3UM-pW-egH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,6 +160,7 @@
                                 </state>
                                 <connections>
                                     <action selector="AddCrypto:" destination="FE5-YZ-tDU" eventType="touchUpInside" id="HD5-Lp-LOy"/>
+                                    <segue destination="ly9-ZY-rSe" kind="show" id="D6M-An-CaI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -217,6 +218,6 @@
         <image name="glyphicons-548-bitcoin.png" width="16" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PLy-Rh-zDz"/>
+        <segue reference="D6M-An-CaI"/>
     </inferredMetricsTieBreakers>
 </document>
