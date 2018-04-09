@@ -20,7 +20,7 @@ class PriceViewController: UIViewController {
     @IBOutlet weak var qtyLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    let group = DispatchGroup()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(symbol)
@@ -30,16 +30,24 @@ class PriceViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        
+        let group = DispatchGroup()
         group.enter()
+//        DispatchQueue.main.async {
+//            self.getPriceData(_url: "https://api.coinmarketcap.com/v1/ticker/?limit=15")
+//            group.leave()
+//        }
         DispatchQueue.main.async {
-            self.priceLabel.text = self.getPriceData(_url: "https://api.coinmarketcap.com/v1/ticker/?limit=15")
-            
+            self.getPriceData(_url: "https://api.coinmarketcap.com/v1/ticker/?limit=15", group: group)
         }
-        group.notify(queue: .main) {
+        
+        group.notify(queue: DispatchQueue.main) {
             self.priceLabel.text = self.price
-            print(self.price)
         }
+      
+        
+        
+    
+        
     }
     
   
@@ -48,11 +56,11 @@ class PriceViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getPriceData(_url:String) -> String {
+    func getPriceData(_url:String, group: DispatchGroup) {
         let myUrl   = NSURL(string: _url);
         let request = NSMutableURLRequest(url:myUrl! as URL);
         request.httpMethod = "GET"
-        var price: String = ""
+        
        
         let task = URLSession.shared.dataTask(with: request as URLRequest) {
             data, response, error in
@@ -69,17 +77,16 @@ class PriceViewController: UIViewController {
             for item in json.array! {
                 print(String (describing: item["name"]))
                 if(String(describing: item["symbol"]) == self.symbol) {
-                     price = String(describing: item["price_usd"])
-                    
+                    self.price = String(describing: item["price_usd"])
+                    print(self.price)
+                    group.leave()
                 }
             }
             
             
         }
         task.resume()
-        self.group.leave()
-        return price
-        
+ 
     }
     
 

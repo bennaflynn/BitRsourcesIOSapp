@@ -387,7 +387,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544919609.924594"
+            timestampString = "544934558.2080801"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -451,12 +451,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544919609.9252729"
+            timestampString = "544934558.2084939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "getPriceData(_url:)"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getPriceData(_url:group:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -499,7 +499,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544919609.9256459"
+            timestampString = "544934558.2087229"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -515,12 +515,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544919609.926331"
+            timestampString = "544934558.2089339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "getPriceData(_url:)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "getPriceData(_url:group:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -531,28 +531,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544919609.927211"
+            timestampString = "544934558.209148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "getPriceData(_url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544919609.92757"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getPriceData(_url:group:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
