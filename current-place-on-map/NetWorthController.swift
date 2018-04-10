@@ -15,7 +15,7 @@ class NetWorthController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.backgroundColor = UIColor.blue
         let repo = CryptoRepo()
         cryptos = repo.All()
         
@@ -69,6 +69,10 @@ class NetWorthController: UITableViewController {
             
             vc.qty = String(cryptos[rowNum].qty)
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
     }
 
     /*

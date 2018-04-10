@@ -44,8 +44,9 @@ class PriceViewController: UIViewController {
         }
         
         group.notify(queue: DispatchQueue.main) {
-            self.priceLabel.text = self.price
-            self.valueLabel.text = String(Float(self.price)! * Float(self.qty)!)
+            self.priceLabel.text = String(format: "$%.02f", Double(self.price)! )
+            let theValue = Double(Float(self.price)! * Float(self.qty)!)
+            self.valueLabel.text = String(format: "$%.02f", theValue)
         }
       
         
