@@ -19,7 +19,10 @@ class PriceViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var qtyLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
     
+    @IBAction func goBackToTable(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,7 @@ class PriceViewController: UIViewController {
         
         group.notify(queue: DispatchQueue.main) {
             self.priceLabel.text = self.price
+            self.valueLabel.text = String(Float(self.price)! * Float(self.qty)!)
         }
       
         

@@ -50,7 +50,9 @@ class AddCryptoViewController: UIViewController, UIPickerViewDataSource, UIPicke
                 var cryptos = [Cryptos] ()
                 cryptos = repo.All()
                 
-                
+                //if the entry was deleted or updated this is switched
+                var updated: Bool = false
+               
                 
                 for crypto in cryptos {
                     if(crypto.symbol == symbol) {
@@ -61,20 +63,30 @@ class AddCryptoViewController: UIViewController, UIPickerViewDataSource, UIPicke
                         //if the result is less than zero then delete the entry entirely
                         if(newQty < 0) {
                             repo.Delete(_id: crypto.id!)
-                            return
+                        } else {
+                            repo.Update(_id: crypto.id!, _name: crypto.name, _qty: newQty, _symbol: crypto.symbol)
                         }
+                        updated = true
                         
-                        repo.Update(_id: crypto.id!, _name: crypto.name, _qty: newQty, _symbol: crypto.symbol)
-                        return
                     }
                 }
                 //if the cryptos were looped through and the specific crypto hadn't been added then add it here
-                repo.Insert(_name: name, _qty: amount, _symbol: symbol)
+                if(updated == false) {
+                    repo.Insert(_name: name, _qty: amount, _symbol: symbol)
+                }
+                
             }
         }
         
-        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "tableView") as! NetWorthController
-        self.navigationController?.pushViewController(secondViewController, animated: true)
+//        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "tableView") as! NetWorthController
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabbarController") as! UITabBarController
+        self.present(newViewController, animated: true, completion: nil)
+        
+//        let secondViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tableView") as! NetWorthController
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

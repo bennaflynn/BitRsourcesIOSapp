@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544919609.923859"
+            timestampString = "545015426.512659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -103,7 +103,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544919609.92401"
+            timestampString = "545015426.51275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -119,7 +119,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544919609.9241"
+            timestampString = "545015426.5128191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -355,7 +355,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/AddCryptoViewController.swift"
-            timestampString = "544919609.924502"
+            timestampString = "545015426.512977"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -387,11 +387,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544934558.2080801"
+            timestampString = "545015426.513063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -451,11 +451,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544934558.2084939"
+            timestampString = "545015426.513166"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "getPriceData(_url:group:)"
             landmarkType = "7">
             <Locations>
@@ -499,11 +499,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544934558.2087229"
+            timestampString = "545015426.513244"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -515,11 +515,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544934558.2089339"
+            timestampString = "545015426.513329"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "getPriceData(_url:group:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -531,12 +531,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "current-place-on-map/PriceViewController.swift"
-            timestampString = "544934558.209148"
+            timestampString = "545015426.513406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "getPriceData(_url:group:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "current-place-on-map/AddCryptoViewController.swift"
+            timestampString = "545015426.513483"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "getPriceData(_url:group:)"
+            landmarkName = "AddCrypto(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
